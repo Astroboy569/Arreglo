@@ -2,11 +2,9 @@
 #include<conio.h>
 #include <iostream>
 #include<stdlib.h>
-#define cn 5
+const int max = 1000;
 
-
-int i,j,opcion,aux;   
-	int n[cn]={10,24,52,45,3};
+int i,j,opcion,aux,cn,n[max];
 
 /*funcion para intercambiar los valores de dos elementos*/
 void intercambio(int* a, int* b) {
@@ -40,9 +38,13 @@ int main(int argc, char** argv)
 
 
 {
-
+	printf("Ingrese el tamano del arreglo:  ");scanf("%d",&cn);
+	for(i=0;i<cn;i++)
+	{
+		printf("Ingrese valores para el arreglo:");	scanf("%d",&n[i]);
+	}
 	
-		printf("Cual de los 4 algoritmos de ordenamientos quiere utilizar\n");
+		printf("Cual de los 7 algoritmos de ordenamientos quiere utilizar\n");
 			printf("1.- Burbuja\n");
 			printf("2.- Seleccion\n");
 			printf("3.- Insercion\n");
@@ -137,7 +139,6 @@ int main(int argc, char** argv)
 	
 	
 
-	
 
 	
 	
